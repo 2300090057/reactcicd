@@ -9,9 +9,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ${{matrix.os}}
-    strategy: 
-    matrix: 
-      os: [ubuntu-latest, window-latest]
+    strategy:
+      matrix:
+        os: [ubuntu-latest, window-latest]
 
     steps:
       - name: Checkout repository
